@@ -23,7 +23,7 @@ public class GameServiceController {
     }
 
     @GetMapping( "/roll-dice")
-    public DiceRollData diceGame(
+    public DiceRollData rollDice(
             @RequestParam(defaultValue = "3") int numberOfDice
     ){
         log.trace("diceGame() is called");
