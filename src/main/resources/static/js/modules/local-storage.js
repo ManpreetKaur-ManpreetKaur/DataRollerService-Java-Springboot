@@ -10,7 +10,7 @@ function load(){
     return RollData.makeRollData(values);
 }
 
-function isSaved(key = "dice-values"){
+function isSaved(){
     return localStorage.getItem(key) != null;
 }
 export {save, load, isSaved}
